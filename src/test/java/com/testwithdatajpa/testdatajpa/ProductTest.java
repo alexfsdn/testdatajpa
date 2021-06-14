@@ -19,7 +19,7 @@ import java.util.List;
 //e está configurado para configurar automaticamente um banco H2, Derby ou HSQL para você, basta apenas
 //ter uma dessas dependencias de banco de dados no seu pom.xml
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE, connection = EmbeddedDatabaseConnection.H2)//replace.none indica que você
-//não deseja que outro banco de dados configurado na sua aplicação seja substituído no seu teste.
+//deseja utilizar o banco de dados configurado na sua aplicação.
 // a connection você inidica qual banco você quer utilizar no seu teste. No caso escolhi a h2, pois
 //na minha dependência no pom.xml tem h2.
 public class ProductTest {
